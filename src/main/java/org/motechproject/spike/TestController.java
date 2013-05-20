@@ -9,7 +9,7 @@ public class TestController {
 
     @ResponseBody
     @RequestMapping("/status")
-    private String create() {
+    private String status() {
         return "Complimenti, si sta lavorando!";
     }
 }
