@@ -14,4 +14,16 @@ public class TestController {
     private String status() {
         return "Complimenti, si sta lavorando! " + new Date();
     }
+
+    @ResponseBody
+    @RequestMapping("/http")
+    private String http() {
+        return "HTTP";
+    }
+
+    @ResponseBody
+    @RequestMapping("/smpp")
+    private String smpp() {
+        return "SMPP";
+    }
 }
